@@ -1,12 +1,13 @@
-import CartModel from "../models/cart.model.js";
+import Cart from "../models/cart.model.js";
 
 class CartDAO {
   async create(cart) {
-    return await CartModel.create(cart);
+    const newCart = new Cart(cart);
+    return await newCart.save();
   }
 
   async findById(id) {
-    return await CartModel.findById(id).populate("products.product");
+    return await Cart.findById(id).populate("products.product");
   }
 
   async save(cart) {

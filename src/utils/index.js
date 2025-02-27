@@ -16,7 +16,7 @@ export const isValidPassword = (password, passwordHash) => {
 };
 
 export const generateToken = (user) => {
-  return jwt.sign({ user }, JWT_SECRET, { expiresIn: "1h" });
+  return jwt.sign({ user }, JWT_SECRET, { expiresIn: "30d" });
 };
 
 export const verifyToken = (token) => {

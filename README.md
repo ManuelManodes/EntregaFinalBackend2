@@ -15,7 +15,7 @@ Este proyecto es una API RESTful desarrollada con Node.js, Express y MongoDB. Im
 
 1. Clona este repositorio:
    ```bash
-   git clone <https://github.com/ManuelManodes/EntregaFinalBackend2.git>
+   git clone https://github.com/ManuelManodes/EntregaFinalBackend2.git
    ```
 2. Navega al directorio del proyecto:
    ```bash
